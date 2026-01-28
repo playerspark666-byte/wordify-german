@@ -75,3 +75,17 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+## Running the project
+
+### Dev server
+pnpm nx dev web
+
+### Unit tests
+pnpm nx test web
+
+### E2E tests
+pnpm nx e2e web-e2e
+
+### View E2E HTML report
+pnpm exec playwright show-report dist/.playwright/apps/web-e2e/playwright-report
