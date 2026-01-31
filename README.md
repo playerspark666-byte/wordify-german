@@ -1,4 +1,4 @@
-### WordifyGerman ###
+# WordifyGerman
 
 ## Running the project
 
