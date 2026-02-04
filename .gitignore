@@ -1,46 +1,67 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# compiled output
+# =========================
+# Build artifacts
+# =========================
 dist
-tmp
-out-tsc
+.out
+.out-tsc
+.nx
+.next
+coverage
 
-# dependencies
-node_modules
+# =========================
+# TypeScript build info
+# =========================
+*.tsbuildinfo
+*.bak
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# =========================
+# Environment files
+# =========================
+.env
+.env.local
+.env.*.local
 
-# IDE - VSCode
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Node modules
+# =========================
+node_modules/
+
+# =========================
+# Editor and IDE
+# =========================
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# =========================
+# OS files
+# =========================
 .DS_Store
 Thumbs.db
 
-.nx/cache
-.nx/workspace-data
+# =========================
+# Optional: Mac/Unix swap files
+# =========================
+*.swp
+*.swo
 
-# Next.js
-.next
-out
+# =========================
+# Optional: Testing artifacts
+# =========================
+jest-report/
+coverage/
