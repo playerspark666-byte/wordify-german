@@ -1,0 +1,16 @@
+{
+  "root": "packages/utils",
+  "sourceRoot": "packages/utils/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc"
+    },
+    "lint": {
+      "executor": "nx:noop"
+    },
+    "test": {
+      "executor": "@nx/jest:jest"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "root": "apps/ai-worker",
+  "sourceRoot": "apps/ai-worker/src",
+  "projectType": "application",
+  "targets": {
+    "build": { "executor": "@nx/node:build" },
+    "serve": { "executor": "@nx/node:execute" },
+    "lint": {
+      "executor": "nx:noop"
+    },
+    "test": { "executor": "@nx/jest:jest" }
+  }
+}

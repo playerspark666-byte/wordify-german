@@ -1,0 +1,13 @@
+{
+  "root": "apps/mobile",
+  "sourceRoot": "apps/mobile/src",
+  "projectType": "application",
+  "targets": {
+    "build": { "executor": "@nx/expo:build" },
+    "start": { "executor": "@nx/expo:start" },
+    "lint": {
+      "executor": "nx:noop"
+    },
+    "test": { "executor": "@nx/jest:jest" }
+  }
+}

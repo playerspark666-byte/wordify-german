@@ -1,0 +1,30 @@
+{
+  "name": "api-v2",
+  "root": "apps/api-v2",
+  "sourceRoot": "apps/api-v2/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/node:build",
+      "options": {
+        "outputPath": "dist/apps/api-v2",
+        "main": "apps/api-v2/src/main.ts",
+        "tsConfig": "apps/api-v2/tsconfig.app.json"
+      }
+    },
+    "serve": {
+      "executor": "@nx/node:execute",
+      "options": {
+        "buildTarget": "api-v2:build"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/api-v2"],
+      "options": {
+        "jestConfig": "apps/api-v2/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
