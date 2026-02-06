@@ -1,1 +1,10 @@
-{ "hello": "Hello" }
+{
+  "app": {
+    "name": "Wordify",
+    "tagline": "Learn German the smart way"
+  },
+  "actions": {
+    "start": "Start",
+    "continue": "Continue"
+  }
+}
