@@ -1,13 +1,11 @@
 {
   "extends": "../tsconfig.base.json",
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
   "compilerOptions": {
-    "esModuleInterop": true
-  }
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node", "@playwright/test"],
+    "outDir": "../dist/out-tsc/apps-e2e",
+    "noEmit": true
+  },
+  "include": ["**/*.ts"]
 }

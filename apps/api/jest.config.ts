@@ -2,9 +2,16 @@ module.exports = {
   displayName: 'api-v2',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
+
   transform: {
-    '^.+\\.[tj]sx?$': 'ts-jest',
+    '^.+\\.[tj]s$': [
+      'ts-jest',
+      {
+        tsconfig: '<rootDir>/tsconfig.spec.json'
+      }
+    ]
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+
+  moduleFileExtensions: ['ts', 'js'],
   coverageDirectory: '../../coverage/apps/api-v2',
 };

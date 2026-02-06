@@ -2,19 +2,29 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "lib": ["ES2022", "DOM"],
+    "types": ["node"],
+
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+
     "baseUrl": ".",
-    "paths": {}
+    "paths": {},
+
+    "strict": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
   "exclude": ["node_modules", "tmp"]
 }
