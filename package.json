@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "name": "@wordify-german/source",
   "version": "0.0.0",
@@ -89,6 +88,3 @@
     "rxjs": "^7.8.2"
   }
 }
-=======
-{ "name": "@wordify/shared-translations", "private": true }
->>>>>>> Stashed changes
