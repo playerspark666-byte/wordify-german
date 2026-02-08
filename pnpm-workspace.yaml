@@ -8,6 +8,7 @@ onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
   - less
+  - nestjs-pino
   - nx
   - sharp
   - unrs-resolver
