@@ -5,7 +5,8 @@
     "apps/**/src/**/*.ts",
     "apps/**/src/**/*.tsx",
     "packages/**/src/**/*.ts",
-    "packages/**/src/**/*.tsx"
+    "packages/**/src/**/*.tsx",
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
