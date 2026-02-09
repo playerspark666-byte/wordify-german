@@ -6,11 +6,7 @@
 
   "targets": {
     "build": {
-<<<<<<< Updated upstream
       "executor": "@nx/js:tsc",
-=======
-      "executor": "@nx/node:build",
->>>>>>> Stashed changes
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/api",
@@ -24,16 +20,10 @@
     },
 
     "serve": {
-<<<<<<< Updated upstream
       "executor": "@nx/js:node",
       "options": {
         "buildTarget": "api:build",
         "watch": true
-=======
-      "executor": "@nx/node:execute",
-      "options": {
-        "buildTarget": "api:build"
->>>>>>> Stashed changes
       }
     },
 
@@ -54,9 +44,6 @@
       }
     }
   },
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
   "tags": ["type:api", "scope:backend"]
 }

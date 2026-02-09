@@ -12,11 +12,9 @@
 
     "sourceMap": true,
     "declaration": false,
-<<<<<<< Updated upstream
+
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-=======
->>>>>>> Stashed changes
 
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

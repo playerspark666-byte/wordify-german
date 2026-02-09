@@ -1,12 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller('api')
+@Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   /**
    * Health / root API endpoint
+   * Effective route: GET /api
+   *
    * Used by:
    * - browser
    * - e2e tests
@@ -19,10 +21,12 @@ export class AppController {
   }
 
   /**
-   * Catch-all API route (optional but recommended)
-   * Prevents legacy "/api/*" warnings elsewhere
+   * Catch-all API route
+   * Effective route: GET /api/*
+   *
+   * Uses named wildcard (path-to-regexp v6+ compliant)
    */
-  @Get('*')
+  @Get('*path')
   catchAll() {
     return {
       status: 'ok',

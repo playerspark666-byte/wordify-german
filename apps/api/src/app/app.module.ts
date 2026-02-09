@@ -1,9 +1,6 @@
 import { Module } from '@nestjs/common';
 import { LoggerModule } from 'nestjs-pino';
-<<<<<<< Updated upstream
 import pino from 'pino';
-=======
->>>>>>> Stashed changes
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -21,23 +18,7 @@ const logger = isDev
 @Module({
   imports: [
     LoggerModule.forRoot({
-<<<<<<< Updated upstream
       pinoHttp: { logger },
-=======
-      pinoHttp: isDev
-        ? {
-            transport: {
-              target: 'pino-pretty',
-              options: {
-                colorize: true,
-                translateTime: 'HH:MM:ss',
-              },
-            },
-          }
-        : {
-            level: 'info',
-          },
->>>>>>> Stashed changes
     }),
   ],
   controllers: [AppController],
