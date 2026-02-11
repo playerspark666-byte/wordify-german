@@ -7,7 +7,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
 
-    "lib": ["ES2022", "DOM"],
+    "lib": ["ES2022"],
     "types": ["node"],
 
     "sourceMap": true,
@@ -23,11 +23,13 @@
     "importHelpers": true,
 
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@wordify/api": ["apps/api/src/index.ts"],
+      "@wordify/api/*": ["apps/api/src/*"]
+    },
 
     "strict": true,
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "tmp"]
 }
