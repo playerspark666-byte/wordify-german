@@ -70,3 +70,6 @@ coverage/
 apps/**/src/**/*.js
 apps/**/src/**/*.js.map
 tmp/
+.env
+apps/api/.env
+apps/web/.env

@@ -12,13 +12,6 @@
         "outputPath": "dist/apps/web",
         "root": "apps/web"
       }
-    },
-    "serve": {
-      "executor": "@nx/next:serve",
-      "options": {
-        "buildTarget": "web:build",
-        "dev": true
-      }
     }
   }
 }
